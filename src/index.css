@@ -1,0 +1,630 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.title_img {
+  display: block;
+  width: 300px;
+  height: 80px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content, .content_ {
+  width: 100%;
+  height: 200px;
+  font-size: 16px;
+  padding: 5px 5px;
+  border: none;
+  border-radius: 8px;
+  background-color: #FFF0F0;
+}
+
+.img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  border-radius: 8px;
+  width: 100%;
+}
+
+/* LoginPage */
+.loginpage {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 500px;
+  padding: 0 20px;
+
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  background-color: #f9f9f9;
+
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.titleWrap {
+  margin-top: 87px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #262626;
+}
+
+.contentWrap {
+  margin-top: 26px;
+  flex: 1;
+}
+
+.inputTitle {
+  font-size: 12px;
+  font-weight: 600;
+  color: #262626;
+}
+
+.inputWrap {
+  display: flex;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 8px;
+  background-color: white;
+  border: 1px solid #e2e0e0;
+}
+
+.inputWrap:focus-within {
+  border: 1px solid #eeeaee;
+}
+
+.input {
+  width: 100%;
+  outline: none;
+  border: none;
+  height: 17px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.input::placeholder {
+  color: #dadada;
+}
+
+.submitButton {
+  width: 100%;
+  height: 48px;
+  border: none;
+  font-weight: bold;
+  border-radius: 64px;
+  background-color: #f2ecf2;
+  color: black;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.submitButton:disabled {
+  background-color: #dadada;
+  color: white;
+}
+
+.errorMessageWrap {
+  margin-top: 8px;
+  color: #ef0000;
+  font-size: 12px;
+}
+
+/* MenuPage */
+.menu_page {
+  margin: 0 70px;
+}
+
+.buttons {
+  padding-bottom: 20px;
+  position: fixed;
+  bottom: 12vmin;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  gap: 5vmin;
+}
+
+.prev, .next {
+  opacity: 0.8;
+  display: block;
+  width: 20vmin;
+  height: 7vmin;
+  border-radius: 1vmin;
+  border: 0;
+  background-color: #eeeaee;
+  font-size: 3vmin;
+  cursor: pointer;
+  color: #1a1a1a;
+}
+
+.prev:hover, .next:hover {
+  opacity: 1;
+}
+
+.prev:disabled, .next:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* CurrentWeather */
+.weatherpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  height: auto;
+  background-color: #eeeaee;
+  border-radius: 5px;
+}
+
+.sky {
+  font-size: 22px;
+  margin-top: 10px;
+  margin-bottom: 18px;
+}
+
+.weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  height: auto;
+  border: 1px solid #eeeaee;
+  border-radius: 8px;
+  background-color: white;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.temp, .max_temp, .min_temp {
+  margin-bottom: 8px;
+}
+
+.city {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.max_temp, .min_temp {
+  font-size: 14px;
+}
+
+.recommend_title {
+  font-weight: 600;
+  color: white;
+}
+
+.clothes {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.umbrella {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+/* Home */
+.body {
+  
+  padding: 0 30px;
+}
+
+.controlmenu {
+  margin-left: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #eeeaee;
+  cursor: pointer;
+}
+
+.DiaryList {
+  margin: 0px 10px;
+}
+
+.diary_item {
+  padding: 20px 20px;
+  border: 1px solid #eeeaee;
+  border-radius: 5px;
+}
+
+.flex_header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.diary_date_time {
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.btn_class {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 5px;
+}
+
+.edit_btn, .remove_btn {
+  border: none;
+  border-radius: 5px;
+  background-color: #eeeaee;
+}
+
+.edit_btn {
+  margin-right: 5px;
+}
+
+.edit_btn:hover, .remove_btn:hover {
+  background-color: #eeeaee;
+  border: 2px solid #333;
+  border-style: dashed;
+}
+
+.content_ {
+  margin-bottom: 20px;
+}
+
+.homeaddbtn {
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  width: 100%;
+  height: 50px;
+  background-color: #eeeaee;
+}
+
+/* DiaryPage */
+.title_section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-bottom: 20px;
+}
+
+.title {
+  font-size: 26px;
+  margin-left: 20px;
+}
+
+.diaryhome_btn {
+  background-color: #eeeaee;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 10px 20px;
+}
+
+.create_section {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.diarycreate {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputbox {
+  display: flex;
+  justify-content: center;
+
+}
+
+.date {
+  margin-right: 20px;
+}
+
+.upload:hover {
+  color: #eeeaee;
+}
+
+.imgUpload:hover {
+  cursor: pointer;
+}
+
+.inputbtn {
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  background-color: #eeeaee;
+}
+
+/* EditContent */
+.edit_section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.EditContent {
+  padding: 10px 10px;
+}
+
+.edit_day_title {
+  margin-top: 0;
+}
+
+.edit_title {
+  margin-bottom: 10px;
+}
+
+.edit_date {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+/* Fortunecookie */
+.fortunepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #eeeaee;
+  border-radius: 5px;
+}
+
+.fortune_title {
+  color: gray;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.fortune_cookie {
+  border-radius: 50%;
+  width: 550px;
+  height: 400;
+  margin-bottom: 20px;
+}
+
+.result {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* media screen */
+/* 타블렛 */
+@media screen and (max-width:1023px) { 
+  .title {
+    font-size: 25px;
+  }
+
+  .title_img {
+    width: 250px;
+    height: 65px;
+  }
+
+  /* LoginPage */
+  .titleWrap {
+    text-align: center;
+  }
+
+  /* MenuPage */
+  .menu_weather, .menu_diary, .menu_fortune {
+    width: 250px;
+    height: 250px;
+  }
+
+  /* CurrentWeather */
+  .weatherpage {
+    width: 500px;
+  }
+  
+  .weather {
+    width: 300px;
+  }
+
+  .sky {
+    font-size: 20px;
+  }
+
+  .recommend_title {
+    font-size: 14px;
+  }
+
+  .clothes {
+    font-size: 14px;
+  }
+
+  /* Home */
+  .controlmenu {
+    text-align: center;
+    font-size: 12px;
+    padding: 0 0;
+    width: 80px;
+    height: 25px;
+  }
+
+  .diarylist_text {
+    font-size: 25px;
+    margin-top: 0;
+  }
+
+  .diarylist_length {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .diary_date_time {
+    font-weight: 300;
+    margin-bottom: 18px;
+  }
+
+  .edit_btn, .remove_btn {
+    font-size: 12px;
+    height: 22px;
+  }
+
+  .content_ {
+    height: 200px;
+    font-size: 15px;
+  }
+
+  .homeaddbtn {
+    padding: 0 20px;
+    font-size: 18px;
+  }
+
+  /* DiaryPage */
+   .content {
+    height: 300px;
+    font-size: 15px;
+  }
+
+  .diaryhome_btn {
+    height: 32px;
+    font-size: 14px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .diary_date, .date, .upload {
+    font-size: 16px;
+  }
+
+  /* Fortunecookie */
+  .fortunepage {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .fortune_cookie {
+    width: 100%;
+  }
+} 
+
+/* 모바일 */
+@media screen and (max-width:767px) {
+  .title {
+    font-size: 20px;
+  }
+  
+  .title_img {
+    width: 200px;
+    height: 60px;
+  }
+  
+  /* LoginPage */
+  .titleWrap {
+    text-align: center;
+  }
+
+  /* MenuPage */
+  .menu_weather, .menu_diary, .menu_fortune {
+    width: 150px;
+    height: 150px;
+    font-size: 14px;
+  }
+
+  /* CurrentWeather */
+  .weatherpage {
+    width: 300px;
+  }
+
+  .weather {
+    width: 200px;
+  }
+
+  .sky {
+    font-size: 18px;
+  }
+
+  .recommend_title {
+    font-size: 14px;
+  }
+
+  .clothes {
+    font-size: 14px;
+  }
+
+
+  /* Home */
+  .controlmenu {
+    text-align: center;
+    font-size: 12px;
+    padding: 0 0;
+    width: 80px;
+    height: 25px;
+  }
+
+  .diarylist_text {
+    font-size: 20px;
+    margin-top: 0;
+  }
+
+  .diarylist_length {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  .diary_date_time {
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 18px;
+  }
+
+  .edit_btn, .remove_btn {
+    font-size: 12px;
+    height: 22px;
+  }
+
+  .content_ {
+    height: 100px;
+    font-size: 12px;
+  }
+
+  .homeaddbtn {
+    padding: 0 20px;
+    font-size: 18px;
+  }
+
+  /* DiaryPage */
+  .content {
+    height: 200px;
+    font-size: 12px;
+  }
+
+  .diaryhome_btn {
+    height: 32px;
+    font-size: 12px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .diary_date, .date, .upload {
+    font-size: 14px;
+  }
+
+  /* Fortunecookie */
+  .fortunepage {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .fortune_cookie {
+    width: 100%;
+  }
+}
+
+  
+
+
+
