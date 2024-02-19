@@ -155,6 +155,12 @@
 }
 
 /* CurrentWeather */
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .weatherpage {
   display: flex;
   flex-direction: column;
